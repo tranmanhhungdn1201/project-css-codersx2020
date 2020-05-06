@@ -1,0 +1,37 @@
+.intro {
+    background-color: #46bae2;
+}
+
+.intro .content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.intro h4, h6 {
+    margin: 0;
+}
+
+.intro h4{
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.intro h6{
+    font-size: 19px;
+    word-spacing: 3px;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+}
+
+.border-button {
+    margin-top: 45px;
+}
+
+.border-button .btn{
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0);
+}
