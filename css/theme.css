@@ -22,4 +22,10 @@
     word-spacing: 3px;
     font-size: 17px;
     line-height: 1.2;
+    color: #989fa6;
+    margin-bottom: 35px;
+}
+
+.theme-content .btn {
+    margin: 0;
 }
