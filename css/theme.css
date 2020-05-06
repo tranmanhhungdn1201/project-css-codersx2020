@@ -1,0 +1,25 @@
+.theme .container{
+    display: flex;
+    align-items: center;
+}
+
+.theme .theme-content {
+    width: 50%;
+    padding: 0 10px;
+}
+
+.theme .theme-photo {
+    padding: 0 10px;
+}
+
+.theme-content h4 {
+    color: #333;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.theme-content p {
+    word-spacing: 3px;
+    font-size: 17px;
+    line-height: 1.2;
+}
