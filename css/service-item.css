@@ -1,0 +1,22 @@
+.service-item {
+    display: flex;
+    background-color: rgba(242, 116, 95, 0.75);
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 30px;
+    color: #fff;
+}
+
+.service-item h4{
+    text-transform: uppercase;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.service-item p{
+    margin: 0;
+    font-size: 17px;
+    text-align: center;
+    line-height: 1.5;
+}
