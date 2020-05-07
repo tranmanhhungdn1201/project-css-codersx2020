@@ -7,8 +7,68 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/menu.css">
+	<link rel="stylesheet" type="text/css" href="./css/banner.css">
+	<link rel="stylesheet" type="text/css" href="./css/intro.css">
+	<link rel="stylesheet" type="text/css" href="./css/service-item.css">
+	<link rel="stylesheet" type="text/css" href="./css/task.css">
+	<link rel="stylesheet" type="text/css" href="./css/theme.css">
+	<link rel="stylesheet" type="text/css" href="./css/title-blog.css">
+	<link rel="stylesheet" type="text/css" href="./css/contact.css">
+	<link rel="stylesheet" type="text/css" href="./css/footer.css">
 </head>
 <body>
+	<header>
+		<div class="main-header">
+			<div class="container">
+				<div class="menu-wrapped">
+					<nav class="navbar">
+						<a href="">Power</a>
+						<button type="button" class="button-menu" onclick="menuFunction()"><i class="fa fa-bars"></i></button>
+						<div class="menu" id="menu">
+							<ul>
+								<li class="active"><a href="">Home</a></li>
+								<li><a href="">About us</a></li>
+								<li><a href="">Portfolio</a></li>
+								<li class="active"><a href="">Blog entries</a></li>
+								<li><a href="">External</a></li>
+								<li class="active"><a href="">Contact</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Banner -->
+	<div class="banner">
+		<div class="container">
+			<div class="banner-content">
+				<h6>Designed with love</h6>
+				<h1>The power<br> theme</h1>
+				<div class="buttons">
+					<a href="#" type="button" class="btn btn-blue">Dowload now</a>
+					<a  href="#" class="btn btn-orange">More details</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="height:900px">
+		
+	</div>
+	<!-- end banner -->
 </body>
+<script type="text/javascript">
+  function menuFunction(){
+  	console.log('oke');
+    var x = document.getElementById('menu');
+    if(x.className === 'menu'){
+    	x.className += ' responsive';
+    }else {
+    	x.className = 'menu';
+    }
+  }
+</script>
 </html>

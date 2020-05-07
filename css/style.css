@@ -1,5 +1,5 @@
 body {
-	background-color: #fff;
+	background-color: #f4f4f4;
     font-family: Source Sans Pro, sans-serif;
     letter-spacing: 0.5px;
 }
@@ -13,6 +13,22 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+@media (min-width: 768px){
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 576px){
+    .container {
+        width: 500px;
+    }
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
 }
 
 .btn {
