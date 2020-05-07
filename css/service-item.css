@@ -1,10 +1,29 @@
-.service-item {
+.service {
+    background-image: url('../img/services-bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.service-item{
     display: flex;
-    background-color: rgba(242, 116, 95, 0.75);
     flex-direction: column;
     align-items: center;
     padding: 80px 30px;
     color: #fff;
+}
+
+.service-item.mobile{
+    background-color: rgba(242, 116, 95, 0.75);
+}
+
+.service-item.html{
+    background-color: rgba(54, 62, 80, 0.75);
+}
+
+.service-item.responsive{
+    background-color: rgba(70, 186, 226, 0.75);
 }
 
 .service-item h4{

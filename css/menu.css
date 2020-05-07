@@ -4,59 +4,79 @@
     top: 30px;
 }
 
-.container {
-	width: 1170px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 .menu-wrapped {
 	background-color: #fff;
+	box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.07);
 }
 
 .menu-wrapped .navbar{
-	display: flex;
-	align-items: center;
-	margin: 0 20px;
+	min-height: 50px;
+	position: relative;
 }
 
 .navbar a{
-	width: 20%;
 	text-decoration: none;
 	color: #46bae2;
-	font-size: 28px;
+	font-size: 30px;
     text-transform: uppercase;
     font-weight: 900;
+    line-height: 50px;
+    margin-left: 15px;
 }
 
-.navbar .menu{
-	flex-grow: 1;
-	float: right;
+.navbar .button-menu {
+	position: absolute;
+    right: 7px;
+    top: 2px;
+	background-color: #f2745f;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin: 5px;
 }
 
-.navbar .menu ul{
-	display: flex;
-	justify-content: flex-end;
+.button-dropdown-menu i {
+	font-size: 20px;
+}
+
+.navbar .dropdown-menu ul{
+	max-height: 0;
+	overflow-y: hidden;
+	transition: max-height 0.7s;
+	/* ease-in: cham luc bat dau, ease-out: cham khi ket thuc, linear: nhu nhau */
+}
+
+.navbar .dropdown-menu.collapse ul{
+	max-height: 500px;
+	transition: max-height 0.7s;
+}
+
+.navbar .dropdown-menu ul{
 	list-style: none;
 	margin: 0;
 }
 
-.menu ul li {
-	padding: 30px 25px;
+.dropdown-menu ul li:not(:last-child){
+	border-bottom: 1px solid #eee;
 }
 
-.menu ul .active{
+.dropdown-menu ul li {
+	text-align: center;
+}
+
+.dropdown-menu ul .active{
 	background-color: #f2745f;
 }
 
-.menu ul .active a {
+.dropdown-menu ul .active a {
 	color: #fff;
 }
 
-.menu ul li a{
+.dropdown-menu ul li a{
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 600;
 	color: #aeaeae;
 }
