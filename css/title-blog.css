@@ -1,28 +1,69 @@
+.blog {
+	display: flex;
+}
+
+.blog h4 {
+	margin: 0;
+	letter-spacing: 0.5px;
+	font-size: 25px;
+}
+
+.blog .blog-title {
+	flex: 1;
+	padding-right: 15px;
+}
+
+.blog .blog-post {
+	flex: 1;
+	padding-left: 15px;
+}
+
+.blog-post .post-content {
+	background-color: #fff;
+    padding: 26px 25px 20px;
+    position: relative;
+    top: -25px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px #cdcdcd;
+}
+
+.post-content .title-item {
+	box-shadow: none;
+}
+
+.post-content p {
+	margin-top: 20px;
+    color: #7a7a7a;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    font-size: 17px;
+}
+
+.post-content .btn {
+	margin-bottom: 15px;
+	display: inline-block;
+}
+
 .title-item {
 	background-color: #fff;
     box-shadow: 0px 0px 10px #cdcdcd;
-    padding: 20px 0 10px 20px;
+    padding: 20px 0 30px 20px;
 }
 
-.title-item h4{
-	margin: 0;
-	letter-spacing: 0.5px;
-}
-
-.title-item ul{
+.title-info{
 	color: #343434;
-    list-style: none;
+    /* list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0; */
     display: flex;
     margin-top: 8px;
 }
 
-.title-item ul li{
+.title-info li{
 	margin-right: 10px;
 }
 
-.title-item ul li i{
+.title-info li i{
 	color: #46bae2;
 	margin-right: 5px;
 }
@@ -32,10 +73,10 @@
 	color: #fff;
 }
 
-.active .title-item ul li{
+.active .title-item .title-info li{
 	color: #fff;
 }
 
-.active .title-item ul li i{
+.active .title-item .title-info li i{
 	color: #fff;
 }

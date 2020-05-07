@@ -1,0 +1,35 @@
+footer {
+    background-color: #363e50;
+}
+
+.footer-power {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.footer-power .copy-right{
+    line-height: 1.5;
+}
+
+.footer-power .socicals ul li{
+    float: left;
+    padding: 15px;
+    font-weight: 700;
+}
+
+.footer-power .socicals ul a{
+    color: #a3afc9;
+    transition: color 0.3s;
+}
+
+.footer-power .socicals ul a:hover{
+    color: #46bae2;
+}
+
+.footer-power .back-to-top {
+    background-color: #46bae2;
+    padding: 40px;
+}
