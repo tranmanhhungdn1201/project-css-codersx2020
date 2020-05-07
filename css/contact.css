@@ -1,0 +1,20 @@
+table {
+    width : 50%;
+}
+
+.contact-input {
+    box-sizing: border-box;
+    border: 0;
+    width: 100%;
+    padding: 15px;
+    color: #7a7a7a;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+table td {
+    padding: 0 20px 20px 0;
+}
+
+table tr:last-child textarea{
+    height: 150px;
+}
