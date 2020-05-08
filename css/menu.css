@@ -2,6 +2,7 @@
 	width: 100%;
     position: fixed;
     top: 30px;
+    z-index: 9999;
 }
 
 .menu-wrapped {
@@ -71,10 +72,13 @@
 
 .dropdown-menu ul .active{
 	background-color: #f2745f;
+	transition: color 0.5s;
+	transition: background-color 0.5s;
 }
 
 .dropdown-menu ul .active a {
 	color: #fff;
+	transition: color 0.5s;
 }
 
 .dropdown-menu ul li a{

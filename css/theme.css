@@ -1,15 +1,14 @@
-.theme .container{
-    display: flex;
-    align-items: center;
-}
-
 .theme .theme-content {
-    width: 50%;
     padding: 0 10px;
+    margin: 50px 0 35px;
 }
 
 .theme .theme-photo {
     padding: 0 10px;
+}
+
+.theme .theme-photo img{
+    width: 100%;
 }
 
 .theme-content h4 {
@@ -24,6 +23,7 @@
     line-height: 1.2;
     color: #989fa6;
     margin-bottom: 35px;
+    line-height: 1.5;
 }
 
 .theme-content .btn {

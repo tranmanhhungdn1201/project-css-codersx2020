@@ -8,16 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" type="text/css" href="./css/menu.css">
 	<link rel="stylesheet" type="text/css" href="./css/banner.css">
 	<link rel="stylesheet" type="text/css" href="./css/intro.css">
 	<link rel="stylesheet" type="text/css" href="./css/service-item.css">
 	<link rel="stylesheet" type="text/css" href="./css/task.css">
 	<link rel="stylesheet" type="text/css" href="./css/theme.css">
+	<link rel="stylesheet" type="text/css" href="./css/slide.css">
 	<link rel="stylesheet" type="text/css" href="./css/title-blog.css">
 	<link rel="stylesheet" type="text/css" href="./css/contact.css">
 	<link rel="stylesheet" type="text/css" href="./css/footer.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="./css/footer.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
 	<header>
@@ -29,12 +33,12 @@
 						<button type="button" class="button-menu" onclick="menuFunction()"><i class="fa fa-bars"></i></button>
 						<div class="dropdown-menu" id="dropdown-menu">
 							<ul>
-								<li class="active"><a href="">Home</a></li>
-								<li><a href="">About us</a></li>
-								<li><a href="">Portfolio</a></li>
-								<li class="active"><a href="">Blog entries</a></li>
-								<li><a href="">External</a></li>
-								<li class="active"><a href="">Contact</a></li>
+								<li class="active menu-item"><a href="#">Home</a></li>
+								<li class="menu-item"><a href="#about">About us</a></li>
+								<li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+								<li class="menu-item"><a href="#blog">Blog entries</a></li>
+								<li class="menu-item"><a href="#">External</a></li>
+								<li class="menu-item"><a href="#contact-us">Contact</a></li>
 							</ul>
 						</div>
 					</nav>
@@ -49,7 +53,7 @@
 				<h6>Designed with love</h6>
 				<h1>The power<br> theme</h1>
 				<div class="buttons">
-					<a href="#" type="button" class="btn btn-blue">Dowload now</a>
+					<a href="#" class="btn btn-blue">Dowload now</a>
 					<a  href="#" class="btn btn-orange">More details</a>
 				</div>
 			</div>
@@ -69,7 +73,7 @@
 	</div>
 	<!-- end intro -->
 	<!-- service -->
-	<section class="service">
+	<section id="about" class="service">
 		<ul>
 			<li>
 				<div class="service-item mobile">
@@ -84,7 +88,7 @@
 			<li>
 				<div class="service-item html">
 					<div class="icon">
-						<img src="./img/first-service-icon.png" alt="phone-icon">
+						<img src="./img/second-service-icon.png" alt="phone-icon">
 					</div>
 					<h4>html css</h4>
 					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit nulla illo rerum debitis voluptatibus ipsam ut aperiam.
@@ -94,24 +98,411 @@
 			<li>
 				<div class="service-item responsive">
 					<div class="icon">
-						<img src="./img/first-service-icon.png" alt="phone-icon">
+						<img src="./img/third-service-icon.png" alt="phone-icon">
 					</div>
 					<h4>Responsive design</h4>
 					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit nulla illo rerum debitis voluptatibus ipsam ut aperiam.
-						 Itaque soluta repellat, sit numquam nobis eius. Quam itaque sint magnam repellat vel!</p>
+						 Itaque soluta repellat, sit numquam nobis eius. Quam itaque sint magnam repellat vel!
+					</p>
 				</div>
 			</li>
 		</ul>
 	</section>
-	<!-- end service -->
-	<div style="height:900px">
-		
+	<div class="tab-contents what-we-do">
+		<div class="container">
+			<div class="section-heading">
+				<h4>What we can do else</h4>
+				<p>Sed tortor lorem, mollis in fringilla sit amet, accumsan eget turpis. Donec ut sollicitudin quam. Sed tempor porta malesuada. Cras aliquam nisi eget efficitur ultrices. Aenean ac ultricies nisl.</p>
+			</div>
+			<div class="tasks">
+				<ul>
+					<li>
+						<a href="#unique" class="active task-item">
+							<div class="task">
+								<div class="icon">
+									<img src="./img/first-list-icon.png" alt="ideas-icon">
+								</div>
+								<h4>Unique Ideas</h4>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#theme" class="task-item">
+							<div class="task">
+								<div class="icon">
+									<img src="./img/second-list-icon.png" alt="ideas-icon">
+								</div>
+								<h4>Theme edit</h4>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#translation" class="task-item">
+							<div class="task">
+								<div class="icon">
+									<img src="./img/third-list-icon.png" alt="ideas-icon">
+								</div>
+								<h4>Translation</h4>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#event" class="task-item">
+							<div class="task">
+								<div class="icon">
+									<img src="./img/fourth-list-icon.png" alt="ideas-icon">
+								</div>
+								<h4>event meeting</h4>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#photo" class="task-item">
+							<div class="task">
+								<div class="icon">
+									<img src="./img/fivth-list-icon.png" alt="ideas-icon">
+								</div>
+								<h4>hd photos</h4>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div id="unique" class="unique theme task-description">
+				<div class="theme-content">
+					<h4>Unique</h4>
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nobis consequatur dolores atque cumque reiciendis perspiciatis facere modi ullam voluptates, culpa impedit perferendis, sit dolor debitis commodi enim! Omnis, ea?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit quasi velit eveniet sint similique, 
+						<br>
+						<br>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nobis consequatur dolores atque cumque reiciendis perspiciatis facere modi ullam voluptates, culpa impedit perferendis, sit dolor debitis commodi enim! Omnis, ea?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit quasi velit eveniet sint similique, 
+					</p>
+					<a href="#" class="btn btn-blue">Download now</a>
+				</div>
+				<div class="theme-photo">
+					<img src="./img/right-side-image_1.jpg" alt="theme-photo">
+				</div>
+			</div>
+			<div id="theme" class="theme task-description display-none-item">
+				<div class="theme-content">
+					<h4>theme edit</h4>
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nobis consequatur dolores atque cumque reiciendis perspiciatis facere modi ullam voluptates, culpa impedit perferendis, sit dolor debitis commodi enim! Omnis, ea?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit quasi velit eveniet sint similique, 
+						<br>
+						<br>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nobis consequatur dolores atque cumque reiciendis perspiciatis facere modi ullam voluptates, culpa impedit perferendis, sit dolor debitis commodi enim! Omnis, ea?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit quasi velit eveniet sint similique, 
+					</p>
+					<a href="#" class="btn btn-blue">Download now</a>
+				</div>
+				<div class="theme-photo">
+					<img src="./img/right-side-image_2.jpg" alt="theme-photo">
+				</div>
+			</div>
+			<div id="translation" class="theme task-description display-none-item">
+				<div class="theme-content">
+					<h4>translation</h4>
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nobis consequatur dolores atque cumque reiciendis perspiciatis facere modi ullam voluptates, culpa impedit perferendis, sit dolor debitis commodi enim! Omnis, ea?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit quasi velit eveniet sint similique, 
+						<br>
+						<br>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nobis consequatur dolores atque cumque reiciendis perspiciatis facere modi ullam voluptates, culpa impedit perferendis, sit dolor debitis commodi enim! Omnis, ea?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit quasi velit eveniet sint similique, 
+					</p>
+					<a href="#" class="btn btn-blue">Download now</a>
+				</div>
+				<div class="theme-photo">
+					<img src="./img/right-side-image_3.jpg" alt="theme-photo">
+				</div>
+			</div>
+			<div id="event" class="theme task-description display-none-item">
+				<div class="theme-content">
+					<h4>event meeting</h4>
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nobis consequatur dolores atque cumque reiciendis perspiciatis facere modi ullam voluptates, culpa impedit perferendis, sit dolor debitis commodi enim! Omnis, ea?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit quasi velit eveniet sint similique, 
+						<br>
+						<br>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nobis consequatur dolores atque cumque reiciendis perspiciatis facere modi ullam voluptates, culpa impedit perferendis, sit dolor debitis commodi enim! Omnis, ea?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit quasi velit eveniet sint similique, 
+					</p>
+					<a href="#" class="btn btn-blue">Download now</a>
+				</div>
+				<div class="theme-photo">
+					<img src="./img/right-side-image_4.jpg" alt="theme-photo">
+				</div>
+			</div>
+			<div id="photo" class="theme task-description display-none-item">
+				<div class="theme-content">
+					<h4>hd images</h4>
+					<p>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nobis consequatur dolores atque cumque reiciendis perspiciatis facere modi ullam voluptates, culpa impedit perferendis, sit dolor debitis commodi enim! Omnis, ea?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit quasi velit eveniet sint similique, 
+						<br>
+						<br>
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti nobis consequatur dolores atque cumque reiciendis perspiciatis facere modi ullam voluptates, culpa impedit perferendis, sit dolor debitis commodi enim! Omnis, ea?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit quasi velit eveniet sint similique, 
+					</p>
+					<a href="#" class="btn btn-blue">Download now</a>
+				</div>
+				<div class="theme-photo">
+					<img src="./img/right-side-image_5.jpg" alt="theme-photo">
+				</div>
+			</div>
+		</div>
 	</div>
-	<!-- end banner -->
+	<section id="portfolio" class="slide-image">
+		<div class="container">
+			<div class="section-heading">
+			<h4>What we can do else</h4>
+			<p>Aliquam neque neque, commodo in euismod id, lobortis in lacus. Duis interdum sagittis velit, fermentum tincidunt lectus. Nam ornare turpis..</p>
+			</div>
+			<div id="owl-carousel" class="owl-carousel owl-theme">
+			  <div>
+			  	<img src="img/first-portfolio-item.jpg" alt="Gallery image 1">
+			  </div>
+			  <div>
+			  	<img src="img/second-portfolio-item.jpg" alt="Gallery image 1">
+			  </div>
+			  <div>
+			  	<img src="img/third-portfolio-item.jpg" alt="Gallery image 1">
+			  </div>
+			  <div>
+			  	<img src="img/fourth-portfolio-item.jpg" alt="Gallery image 1">
+			  </div>
+			  <div>
+			  	<img src="img/first-portfolio-item.jpg" alt="Gallery image 1">
+			  </div>
+			  <div>
+			  	<img src="img/second-portfolio-item.jpg" alt="Gallery image 1">
+			  </div>
+			  <div>
+			  	<img src="img/third-portfolio-item.jpg" alt="Gallery image 1">
+			  </div>
+			  <div>
+			  	<img src="img/fourth-portfolio-item.jpg" alt="Gallery image 1">
+			  </div>
+			</div>
+		</div>
+	</section>
+	<section id="blog" class="section-blog">
+		<div class="container">
+			<div class="section-heading">
+			<h4>Our Blog Entries</h4>
+			<p>Aliquam neque neque, commodo in euismod id, lobortis in lacus. Duis interdum sagittis velit, fermentum tincidunt lectus. Nam ornare turpis.</p>
+			</div>
+			<div class="blog">
+				<ul class="blog-title">
+					<li>
+						<a href="#tab1" class="active blog-title-item">
+							<div class="title-item">
+								<h4>SHOREDITCH WOLF ETHICAL HASHTAG</h4>
+								<ul class="title-info">
+									<li><i class="fa fa-user"></i>Admin</li>
+									<li><i class="fa fa-calendar"></i>14 November 2017</li>
+									<li><i class="fa fa-wechat"></i>12 Comments</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#tab2" class="blog-title-item">
+							<div class="title-item">
+								<h4>
+                                    kickstarter master cleanse scenester
+                                </h4>
+								<ul class="title-info">
+									<li><i class="fa fa-user"></i>Krist</li>
+									<li><i class="fa fa-calendar"></i>08 November 2017</li>
+									<li><i class="fa fa-wechat"></i>16 Comments</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#tab3" class="blog-title-item">
+							<div class="title-item">
+								<h4>
+                                    Seitan flexitarian prism shaman
+                                </h4>
+								<ul class="title-info">
+									<li><i class="fa fa-user"></i>Nanny</li>
+									<li><i class="fa fa-calendar"></i>02 November 2017</li>
+									<li><i class="fa fa-wechat"></i>9 Comments</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#tab4" class="blog-title-item">
+							<div class="title-item">
+								<h4>
+                                    Fashion axe selvage everyday carry
+                                </h4>
+								<ul class="title-info">
+									<li><i class="fa fa-user"></i>Krist</li>
+									<li><i class="fa fa-calendar"></i>28 Octorber 2017</li>
+									<li><i class="fa fa-wechat"></i>11 Comments</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#tab5" class="blog-title-item">
+							<div class="title-item">
+								<h4>
+                                    chambray truffaut godard flannel
+                                </h4>
+								<ul class="title-info">
+									<li><i class="fa fa-user"></i>Admin</li>
+									<li><i class="fa fa-calendar"></i>22 Octorber 2017</li>
+									<li><i class="fa fa-wechat"></i>24 Comments</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<div class="blog-post" id="tab1">
+					<div class="post-image">
+						<img src="./img/blog-post-1.jpg" alt="">
+					</div>
+					<div class="post-content">
+						<h4>SHOREDITCH WOLF ETHICAL HASHTAG</h4>
+						<ul class="title-info">
+							<li><i class="fa fa-user"></i>Admin</li>
+							<li><i class="fa fa-calendar"></i>14 November 2017</li>
+							<li><i class="fa fa-wechat"></i>12 Comments</li>
+						</ul>
+						<p>La croix kombucha bespoke dreamcatcher, tumeric tbh quinoa micro dosing gastro pub. 8-bit freegan chartreuse synth jean shorts farm to table, cold pressed authen tic. Mixtape hella beard meditation, Pok pok meh tote bag single-origin coffee, everyday carry unicorn raw denim distillery cray pork belly taxidermy organic polaroid.</p>
+						<a href="#" class="btn btn-blue">continue reading</a>
+					</div>
+				</div>
+				<div class="blog-post display-none-item" id="tab2">
+					<div class="post-image">
+						<img src="./img/blog-post-2.jpg" alt="">
+					</div>
+					<div class="post-content">
+						<h4>KICKSTARTER MASTER CLEANSE SCENESTER</h4>
+						<ul class="title-info">
+							<li><i class="fa fa-user"></i>Krist</li>
+							<li><i class="fa fa-calendar"></i>08 November 2017</li>
+							<li><i class="fa fa-wechat"></i>16 Comments</li>
+						</ul>
+						<p>La croix kombucha bespoke dreamcatcher, tumeric tbh quinoa micro dosing gastro pub. 8-bit freegan chartreuse synth jean shorts farm to table, cold pressed authen tic. Mixtape hella beard meditation, Pok pok meh tote bag single-origin coffee, everyday carry unicorn raw denim distillery cray pork belly taxidermy organic polaroid.</p>
+						<a href="#" class="btn btn-blue">continue reading</a>
+					</div>
+				</div>
+				<div class="blog-post display-none-item" id="tab3">
+					<div class="post-image">
+						<img src="./img/blog-post-3.jpg" alt="">
+					</div>
+					<div class="post-content">
+						<h4>SEITAN FLEXITARIAN PRISM SHAMAN</h4>
+						<ul class="title-info">
+							<li><i class="fa fa-user"></i>Nanny</li>
+							<li><i class="fa fa-calendar"></i>03 November 2017</li>
+							<li><i class="fa fa-wechat"></i>9 Comments</li>
+						</ul>
+						<p>La croix kombucha bespoke dreamcatcher, tumeric tbh quinoa micro dosing gastro pub. 8-bit freegan chartreuse synth jean shorts farm to table, cold pressed authen tic. Mixtape hella beard meditation, Pok pok meh tote bag single-origin coffee, everyday carry unicorn raw denim distillery cray pork belly taxidermy organic polaroid.</p>
+						<a href="#" class="btn btn-blue">continue reading</a>
+					</div>
+				</div>
+				<div class="blog-post display-none-item" id="tab4">
+					<div class="post-image">
+						<img src="./img/blog-post-4.jpg" alt="">
+					</div>
+					<div class="post-content">
+						<h4>FASHION AXE SELVAGE EVERYDAY CARRY</h4>
+						<ul class="title-info">
+							<li><i class="fa fa-user"></i>Krist</li>
+							<li><i class="fa fa-calendar"></i>28 Octorber 2017</li>
+							<li><i class="fa fa-wechat"></i>11 Comments</li>
+						</ul>
+						<p>La croix kombucha bespoke dreamcatcher, tumeric tbh quinoa micro dosing gastro pub. 8-bit freegan chartreuse synth jean shorts farm to table, cold pressed authen tic. Mixtape hella beard meditation, Pok pok meh tote bag single-origin coffee, everyday carry unicorn raw denim distillery cray pork belly taxidermy organic polaroid.</p>
+						<a href="#" class="btn btn-blue">continue reading</a>
+					</div>
+				</div>
+				<div class="blog-post display-none-item" id="tab5">
+					<div class="post-image">
+						<img src="./img/blog-post-5.jpg" alt="">
+					</div>
+					<div class="post-content">
+						<h4>CHAMBRAY TRUFFAUT GODARD FLANNEL</h4>
+						<ul class="title-info">
+							<li><i class="fa fa-user"></i>Admin</li>
+							<li><i class="fa fa-calendar"></i>22 Octorber 2017</li>
+							<li><i class="fa fa-wechat"></i>24 Comments</li>
+						</ul>
+						<p>La croix kombucha bespoke dreamcatcher, tumeric tbh quinoa micro dosing gastro pub. 8-bit freegan chartreuse synth jean shorts farm to table, cold pressed authen tic. Mixtape hella beard meditation, Pok pok meh tote bag single-origin coffee, everyday carry unicorn raw denim distillery cray pork belly taxidermy organic polaroid.</p>
+						<a href="#" class="btn btn-blue">continue reading</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="contact-us" class="contact-us">
+		<div class="container">
+			<div class="section-heading">
+				<h4>Contact Us</h4>
+				<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst.</p>
+			</div>
+			<div class="section-content">
+				<div class="contact-form">
+					<form>
+						<input type="text" class="contact-input" placeholder="Name...">
+						<input type="text" class="contact-input" placeholder="Email...">
+						<input type="text" class="contact-input"placeholder="Subject...">
+						<input type="text"  class="contact-input"placeholder="Phone...">
+						<textarea class="contact-input" placeholder="Message"></textarea>
+						<a href="#" class="btn btn-blue">Send your message</a>
+					</form>
+				</div>
+				<div id="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.3030413476204!2d100.5641230193719!3d13.757206847615207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf51ce6427b7918fc!2sG+Tower!5e0!3m2!1sen!2sth!4v1510722015945" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="footer-power">
+				<div class="copy-right">
+					<p>Copyright © 2017 Your Company <br> 
+						Power Theme by HTML5 Max</p>
+				</div>
+				<div class="socicals">
+					<ul>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">Linkedin</a></li>
+						<li><a href="#">Instagram</a></li>
+					</ul>
+				</div>
+				<div class="back-to-top" id="back-to-top">
+					<i class="fa fa-angle-up"></i>
+					<h4>Back to top</h4>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+<!-- Google Map -->
+<script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gmap3/7.2.0/gmap3.min.js"></script>
 <script type="text/javascript">
+  $('#owl-carousel').owlCarousel({
+    items:4,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true
+	});
+	$('.play').on('click',function(){
+	    owl.trigger('play.owl.autoplay',[1000])
+	})
+	$('.stop').on('click',function(){
+	    owl.trigger('stop.owl.autoplay')
+	});
+
   function menuFunction(){
-  	console.log('oke');
     var x = document.getElementById('dropdown-menu');
     if(x.className === 'dropdown-menu'){
     	x.className += ' collapse';
@@ -119,5 +510,64 @@
     	x.className = 'dropdown-menu';
     }
   }
+ // task tab & active
+  var tasks = document.getElementsByClassName('task-item');
+  const displayNoneAllTask = function(){
+  	var taskDes = document.getElementsByClassName('task-description');
+  	for(let i = 0; i < taskDes.length; i++){
+  		tasks[i].className = 'task-item';
+  		taskDes[i].className += ' display-none-item';
+  	}
+  }
+  const moveTabTask = function(){
+  	if(this.href){
+  		var hrefLink = this.href.slice(this.href.indexOf('#') + 1);
+	  	displayNoneAllTask();
+	  	var paragrahDiscription = document.getElementById(hrefLink);
+	  	this.className += ' active';
+	  	paragrahDiscription.className = 'theme task-description';
+  	}
+  };
+  for(let i = 0; i < tasks.length; i++){
+  	tasks[i].addEventListener('click', moveTabTask);
+  }
+  // blog tab
+  var titleBlogs = document.getElementsByClassName('blog-title-item');
+  const displayNoneAllBlog = function(){
+  	var blogs = document.getElementsByClassName('blog-post');
+  	for(let i = 0; i < blogs.length; i++){
+  		titleBlogs[i].className = 'blog-title-item';
+  		blogs[i].className += ' display-none-item';
+  	}
+  }
+  const moveTabBlog = function(){
+  	if(this.href){
+  		var hrefLink = this.href.slice(this.href.indexOf('#') + 1);
+	  	displayNoneAllBlog();
+	  	var blog = document.getElementById(hrefLink);
+	  	this.className += ' active';
+	  	blog.className = 'blog-post';
+  	}
+  };
+  for(let i = 0; i < titleBlogs.length; i++){
+  	titleBlogs[i].addEventListener('click', moveTabBlog);
+  }
+  //menu
+  var itemMenus = document.getElementsByClassName('menu-item');
+  const activeMenu = function(){
+  	for(let i = 0; i < itemMenus.length; i++){
+  		itemMenus[i].className = 'menu-item';
+  	}
+  	this.className +=  ' active';
+  };
+  for(let i = 0; i < itemMenus.length; i++){
+  	itemMenus[i].addEventListener('click', activeMenu);
+  }
+  
+  var buttonBackToTop = document.getElementById('back-to-top');
+  buttonBackToTop.addEventListener('click', function(){
+  	document.body.scrollTop = 0; // For Safari
+  	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  });
 </script>
 </html>

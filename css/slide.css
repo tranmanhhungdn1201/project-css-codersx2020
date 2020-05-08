@@ -1,0 +1,17 @@
+.slide-image {
+	background-color: #363e50;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+.slide-image .section-heading{
+	color: #fff;
+}
+
+.slide-image .section-heading p{
+	color: #aaa;
+}
+
+.owl-carousel {
+	/*padding: 0 15px;*/
+}

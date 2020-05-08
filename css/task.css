@@ -1,20 +1,53 @@
-.active .task{
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading h4 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
+.section-heading p {
+    font-size: 17px;
+    color: #7a7a7a;
+    padding: 0 25%;
+}
+
+.tasks ul li{
+    padding: 15px 11px;
+}
+
+.active .task {
     background-color: #f2745f;
 }
 
-.active .task h4{
+.active .task h4 {
     color: #fff;
 }
 
-.active .task .icon img{
-    background-color: white;
+.active .task .icon{
+    background-color: #fff;
+}
+
+.task .icon{
+    background-color: #f4f4f4;
     border-radius: 50%;
-    padding: 25px;
+    padding: 0px;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+
+.task .icon img {
+    padding-top: 15px;
 }
 
 .task{
     background-color: #f4f4f4;
-    padding: 35px;
+    padding: 60px 0 25px;
     text-align: center;
 }
 
