@@ -6,6 +6,7 @@
 
 .menu-wrapped {
 	background-color: #fff;
+	box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.07);
 }
 
 .menu-wrapped .navbar{
@@ -39,38 +40,44 @@
 	font-size: 20px;
 }
 
-.navbar .responsive{
-	display: block !important;
-	margin-right: 50px;
+.button-dropdown-menu i {
+	font-size: 20px;
 }
 
-.navbar .menu{
-	display: none;
-	flex-grow: 1;
+.navbar .dropdown-menu ul{
+	max-height: 0;
+	overflow-y: hidden;
+	transition: max-height 0.7s;
+	/* ease-in: cham luc bat dau, ease-out: cham khi ket thuc, linear: nhu nhau */
 }
 
-.navbar .menu ul{
+.navbar .dropdown-menu.collapse ul{
+	max-height: 500px;
+	transition: max-height 0.7s;
+}
+
+.navbar .dropdown-menu ul{
 	list-style: none;
 	margin: 0;
 }
 
-.menu ul li:not(:last-child){
+.dropdown-menu ul li:not(:last-child){
 	border-bottom: 1px solid #eee;
 }
 
-.menu ul li {
+.dropdown-menu ul li {
 	text-align: center;
 }
 
-.menu ul .active{
+.dropdown-menu ul .active{
 	background-color: #f2745f;
 }
 
-.menu ul .active a {
+.dropdown-menu ul .active a {
 	color: #fff;
 }
 
-.menu ul li a{
+.dropdown-menu ul li a{
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 16px;
